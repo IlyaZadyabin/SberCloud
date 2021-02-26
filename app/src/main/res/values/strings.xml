@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SberCloud</string>
+    <string name="upper_text">Brand new</string>
+    <string name="roll">Roll</string>
+    <string name="tip_amount">Tip amount %s</string>
+    <string name="cost_of_service">Cost of Service</string>
+</resources>

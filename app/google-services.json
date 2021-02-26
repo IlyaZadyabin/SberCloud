@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "94737553042",
+    "project_id": "sbercloud-79b36",
+    "storage_bucket": "sbercloud-79b36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94737553042:android:dac6dd71639c29afa1b84b",
+        "android_client_info": {
+          "package_name": "com.ViVi.sbercloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94737553042-03qk4c9jhnulvkvlu37sg3qvaoam3jee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvQ4DiCq1DcHGCOzzxdhEfb-mNializG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94737553042-03qk4c9jhnulvkvlu37sg3qvaoam3jee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
