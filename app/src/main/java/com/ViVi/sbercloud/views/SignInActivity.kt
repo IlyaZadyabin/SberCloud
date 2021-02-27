@@ -6,11 +6,9 @@ package com.ViVi.sbercloud.views
 import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.ViVi.sbercloud.databinding.ActivitySignInBinding
-import com.android.volley.RequestQueue
 import kotlinx.android.synthetic.main.activity_sign_in.*
 import okhttp3.Call
 import okhttp3.Callback
@@ -22,9 +20,7 @@ import org.json.JSONObject
 import java.io.IOException
 
 class SignInActivity : AppCompatActivity() {
-    private lateinit var textView: TextView
-    private var requestQueue: RequestQueue? = null
-    lateinit var signInEmail: String
+    lateinit var signInUsername: String
     lateinit var signInPassword: String
     lateinit var signInInputsArray: Array<EditText>
     lateinit var binding: ActivitySignInBinding
@@ -33,17 +29,17 @@ class SignInActivity : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        signInInputsArray = arrayOf(etSignInEmail, etSignInPassword)
+        signInInputsArray = arrayOf(etSignInUsername, etSignInPassword)
 
         btnSignIn.setOnClickListener {
             signInUser()
         }
     }
 
-    private fun notEmpty(): Boolean = signInEmail.isNotEmpty() && signInPassword.isNotEmpty()
+    private fun notEmpty(): Boolean = signInUsername.isNotEmpty() && signInPassword.isNotEmpty()
 
     private fun signInUser() {
-        signInEmail = etSignInEmail.text.toString().trim()
+        signInUsername = etSignInUsername.text.toString().trim()
         signInPassword = etSignInPassword.text.toString().trim()
         val okHttpClient = OkHttpClient()
 
@@ -58,10 +54,10 @@ class SignInActivity : AppCompatActivity() {
                             "            ],\n" +
                             "            \"password\": {\n" +
                             "                \"user\": {\n" +
-                            "                    \"name\": \"hackathon108\",\n" +
-                            "                    \"password\": \"gang1277\",\n" +
+                            "                    \"name\": \"$signInUsername\",\n" +
+                            "                    \"password\": \"$signInPassword\",\n" +
                             "                    \"domain\": {\n" +
-                            "                        \"name\": \"hackathon108\"\n" +
+                            "                        \"name\": \"$signInUsername\"\n" +
                             "                    }\n" +
                             "                }\n" +
                             "            }\n" +
@@ -108,7 +104,6 @@ class SignInActivity : AppCompatActivity() {
                                 Toast.makeText(this@SignInActivity, "Wrong credentials", Toast.LENGTH_SHORT).show()
                             }
                         }
-
                     } catch (e: Exception) {
                         this@SignInActivity.runOnUiThread {
                             Toast.makeText(this@SignInActivity, "Sign in failed: $e", Toast.LENGTH_SHORT).show()

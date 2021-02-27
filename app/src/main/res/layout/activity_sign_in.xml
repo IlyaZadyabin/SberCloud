@@ -7,7 +7,18 @@
     tools:context=".views.SignInActivity"
     tools:ignore="Autofill, LabelFor">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="333dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:src="@drawable/logo_color_1" />
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_in"
@@ -15,18 +26,18 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etSignInEmail"
+        app:layout_constraintBottom_toTopOf="@+id/etSignInUsername"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etSignInEmail"
+        android:id="@+id/etSignInUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="20dp"
-        android:hint="@string/email"
+        android:hint="@string/Username"
         android:inputType="textEmailAddress"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/etSignInPassword"
@@ -45,9 +56,9 @@
         android:maxLength="8"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
-        app:layout_constraintEnd_toEndOf="@+id/etSignInEmail"
-        app:layout_constraintStart_toStartOf="@+id/etSignInEmail"
-        app:layout_constraintTop_toBottomOf="@+id/etSignInEmail" />
+        app:layout_constraintEnd_toEndOf="@+id/etSignInUsername"
+        app:layout_constraintStart_toStartOf="@+id/etSignInUsername"
+        app:layout_constraintTop_toBottomOf="@+id/etSignInUsername" />
 
     <Button
         android:id="@+id/btnSignIn"
