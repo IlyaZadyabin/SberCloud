@@ -6,6 +6,10 @@ plugins {
 
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-kapt'
+
+
+
 
 
 android {
@@ -66,7 +70,9 @@ dependencies {
     // define any required OkHttp artifacts without version
     implementation("com.squareup.okhttp3:okhttp")
     implementation("com.squareup.okhttp3:logging-interceptor")
+    implementation("com.squareup.moshi:moshi:1.11.0")
 
+    kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.9.1'
 
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.1")
 }

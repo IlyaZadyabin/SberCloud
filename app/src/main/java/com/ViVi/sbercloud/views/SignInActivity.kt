@@ -58,10 +58,10 @@ class SignInActivity : AppCompatActivity() {
                             "            ],\n" +
                             "            \"password\": {\n" +
                             "                \"user\": {\n" +
-                            "                    \"name\": \"$signInEmail\",\n" +
-                            "                    \"password\": \"$signInPassword\",\n" +
+                            "                    \"name\": \"hackathon108\",\n" +
+                            "                    \"password\": \"gang1277\",\n" +
                             "                    \"domain\": {\n" +
-                            "                        \"name\": \"$signInEmail\"\n" +
+                            "                        \"name\": \"hackathon108\"\n" +
                             "                    }\n" +
                             "                }\n" +
                             "            }\n" +
