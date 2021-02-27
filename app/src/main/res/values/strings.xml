@@ -4,4 +4,9 @@
     <string name="roll">Roll</string>
     <string name="tip_amount">Tip amount %s</string>
     <string name="cost_of_service">Cost of Service</string>
+    <string name="sign_in">Sign in</string>
+    <string name="or">Or</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create account</string>
 </resources>
