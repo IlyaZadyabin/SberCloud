@@ -10,10 +10,12 @@
  
 На главном экране пользователь может ввести свой логин и пароль от **SberCloud**
 <p float="left">
-<img src="Screenshots/1.jpg" alt="drawing" width="230"/>
-<img src="Screenshots/2.jpg" alt="drawing" width="230"/>
-<img src="Screenshots/3.jpg" alt="drawing" width="230"/>
-<img src="Screenshots/4.jpg" alt="drawing" width="230"/>
+<img src="Screenshots/1.jpg" alt="drawing" width="300"/>
+<img src="Screenshots/3.jpg" alt="drawing" width="300"/>
+</p>
+<p float="left">
+<img src="Screenshots/2.jpg" alt="drawing" width="300"/>
+<img src="Screenshots/4.jpg" alt="drawing" width="300"/>
 </p>
 
 **Show token** позволяет получить аутентификационный токен, полученный при логине  
